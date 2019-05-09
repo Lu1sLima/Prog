@@ -1,5 +1,11 @@
 package exercíciosRepetiçãoGiraffa;
 
+/**
+*
+* @author Luís Lima
+* @version 9 may 19
+* 
+*/
 
 import java.util.Scanner;
 public class Ex11 {
