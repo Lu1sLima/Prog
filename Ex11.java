@@ -1,4 +1,4 @@
-package exercÌciosRepetiÁ„oGiraffa;
+package exerc√≠ciosRepeti√ß√£oGiraffa;
 
 
 import java.util.Scanner;
@@ -13,39 +13,39 @@ public class Ex11 {
 	int women = 0;
 	int men = 0;
 	double maior = 0;
-	double menor = 100000; //Thx to Anderson! - Colocando a vari·vel MENOR como um n˙mero GRANDE pra nao bugar na hora do teste.
+	double menor = 100000; //Thx to Anderson! - Colocando a vari√°vel MENOR como um n√∫mero GRANDE pra nao bugar na hora do teste.
 	double altura = 0;
 	double mediaG = 0;
 	double mediaW = 0;
-	for (int i = 1; i <= 3; i++) // VAI MANDAR PEDIR ENTRADA DE DADOS AT… X VEZES, O EX PEDE 50, MAS DEIXEI 3 PARA TESTAR APENAS.
+	for (int i = 1; i <= 3; i++) // VAI MANDAR PEDIR ENTRADA DE DADOS AT√â X VEZES, O EX PEDE 50, MAS DEIXEI 3 PARA TESTAR APENAS.
 	{
-		do //OBRIGANDO O USU¡RIO A DIGITAR OS N⁄MEROS SOLICITADOS
+		do //OBRIGANDO O USU√ÅRIO A DIGITAR OS N√öMEROS SOLICITADOS
 		{
 			System.out.println("Informe o seu sexo, 1 para Masculino e 2 para Feminino: ");
 			sexo = input.nextInt();
-			if (sexo == 1) {men++;} // Se for homem adiciona 1 na vari·vel men.
-			if (sexo == 2) {women++;} // Se for mulher, adiciona 1 na vari·vel women.
-			if (sexo <= 0 || sexo > 2) {System.out.println("VocÍ digitou um n˙mero inv·lido.");} // Se digitar um n˙mero fora do range (1,2), aparece essa msg.
+			if (sexo == 1) {men++;} // Se for homem adiciona 1 na vari√°vel men.
+			if (sexo == 2) {women++;} // Se for mulher, adiciona 1 na vari√°vel women.
+			if (sexo <= 0 || sexo > 2) {System.out.println("Voc√™ digitou um n√∫mero inv√°lido.");} // Se digitar um n√∫mero fora do range (1,2), aparece essa msg.
 		} while (sexo <= 0 || sexo > 2); // Controle do DO.
 		
-		do //OBRIGANDO O USU¡RIO A DIGITAR UMA ALTURA V¡LIDA
+		do //OBRIGANDO O USU√ÅRIO A DIGITAR UMA ALTURA V√ÅLIDA
 		{
 			System.out.println("Informe a sua altura em metros: ");
 			altura = input.nextDouble();
-			if (altura <= 0) {System.out.println("VocÍ digitou um n˙mero inv·lido.");} // Se digitar uma altura negativa aparece essa mensagem.
-			if (sexo == 2) {acumuladorW += altura; // Vari·vel acumuladora de altura quando for 2 (feminino)
+			if (altura <= 0) {System.out.println("Voc√™ digitou um n√∫mero inv√°lido.");} // Se digitar uma altura negativa aparece essa mensagem.
+			if (sexo == 2) {acumuladorW += altura; // Vari√°vel acumuladora de altura quando for 2 (feminino)
 			}
-			acumuladorG += altura; // Vari·vel acumuladora de altura de grupo, ou seja, independente do sexo.
+			acumuladorG += altura; // Vari√°vel acumuladora de altura de grupo, ou seja, independente do sexo.
 		}while (altura <= 0); // Controle do DO.
 		if (altura > maior) {maior = altura;}
 		else if (altura < menor) {menor = altura;}
 	}
-	mediaW = acumuladorW/women; // Calcula a mÈdia da altura das mulheres.
-	mediaG = acumuladorG/(men+women); // Calcula a mÈdia da altura dos homens.
+	mediaW = acumuladorW/women; // Calcula a m√©dia da altura das mulheres.
+	mediaG = acumuladorG/(men+women); // Calcula a m√©dia da altura do grupo inteiro.
 	System.out.println("Maior altura do grupo: "+(maior));
 	System.out.println("Menor altura do grupo: "+(menor)); 
-	System.out.println("MÈdia de altura do grupo: "+(mediaG));
-	System.out.println("MÈdia de altura das mulheres: "+(mediaW));
+	System.out.println("M√©dia de altura do grupo: "+(mediaG));
+	System.out.println("M√©dia de altura das mulheres: "+(mediaW));
 }
 }
 
