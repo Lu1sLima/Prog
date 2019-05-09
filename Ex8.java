@@ -15,7 +15,7 @@ public class Ex8
     }
     
     
-       public static int somaDivPro (int num){
+       public static int somaDivPro (int num){ //retorna a soma dos divisores exceto o próprio número
         int soma = 0;
         for (int i = num/2; i >= 1; i--) { // coloquei num/2 pq os divisores de um número N estão até a METADE desse número. (e assim, não soma o próprio N)
             if (num % i == 0){soma +=i;} // testando se i é divisor do número, se sim, guarda na variável auxiliar que recebe auxiliar+i
