@@ -2,8 +2,8 @@
 /**
  * Escreva a descrição da classe Ex1v2 aqui.
  * 
- * @author (seu nome) 
- * @version (número de versão ou data)
+ * @author (Luis L.) 
+ * @version (08/05)
  */
 
 import java.util.Scanner;
