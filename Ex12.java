@@ -1,5 +1,11 @@
-package exercíciosRepetiçãoGiraffa;
+package exercÃ­ciosRepetiÃ§Ã£oGiraffa;
 
+/**
+*
+* @author LuÃ­s Lima
+* @version 9 may 19
+* 
+*/
 
 import java.util.Scanner;
 public class Ex12 {
@@ -17,28 +23,28 @@ public class Ex12 {
 		double somaPar = 0;
 		do 
 		{
-			System.out.println("Digite um número maior que zero: ");
+			System.out.println("Digite um nÃºmero maior que zero: ");
 			num = input.nextInt();
-			if (num % 2 == 0) // definição de número par.
+			if (num % 2 == 0) // definiÃ§Ã£o de nÃºmero par.
 			{
-				somaPar+= num; // Soma só os números que são pares.
+				somaPar+= num; // Soma sÃ³ os nÃºmeros que sÃ£o pares.
 				if (num > maior) {maior = num;}
 			}
 			
-			if (num % 2 != 0) // ímpar
+			if (num % 2 != 0) // Ã­mpar
 			{
 				if (num < menor) {menor = num;}
 			}
-			soma += num; // soma de todos números lidos.
+			soma += num; // soma de todos nÃºmeros lidos.
 			i++; // contadora
-			percentPar = (somaPar*100)/soma; // PORCENTAGEM, PEGA A SOMA DE PARES, MULTIPLICA POR 100 E DIVIDE PELA SOMA DE TODOS OS NÚMEROS
+			percentPar = (somaPar*100)/soma; // PORCENTAGEM, PEGA A SOMA DE PARES, MULTIPLICA POR 100 E DIVIDE PELA SOMA DE TODOS OS NÃšMEROS
 		} while (num >= 1);
 		media = ((double)soma)/(i-1); // tirei 1 do contador, pra nao contar o encerremento do loop quando num == 0 ou num < 0.
-		if (num <= 0) {System.out.println("Número inválido!");}
-		System.out.println("Maior número par: " +maior);
-		System.out.println("Menor número ímpar: " +menor);
-		System.out.println("Soma dos números lidos: " +soma);
-		System.out.println("Média dos números lidos: "+media);
-		System.out.println("Porcentagem de números pares: "+percentPar);
+		if (num <= 0) {System.out.println("NÃºmero invÃ¡lido!");}
+		System.out.println("Maior nÃºmero par: " +maior);
+		System.out.println("Menor nÃºmero Ã­mpar: " +menor);
+		System.out.println("Soma dos nÃºmeros lidos: " +soma);
+		System.out.println("MÃ©dia dos nÃºmeros lidos: "+media);
+		System.out.println("Porcentagem de nÃºmeros pares: "+percentPar);
 	}
 }
