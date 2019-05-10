@@ -6,7 +6,7 @@
  * @version (10/05)
  */
 
-ipackage euclides;
+package euclides;
 
 
 import java.util.Scanner;
@@ -36,15 +36,15 @@ public class AlgoritmoEuclides {
 			b = aux;
 		}
 		
-		resto = a%b;
-		if (resto == 0) {System.out.println(b);}
-		else 
+		resto = a%b; // se o resto de a/b for zero, então b é o MDC de a.
+		if (resto == 0) {System.out.println(b);} //se o resto de a/b for zero, então b é o MDC de a.
+		else // se o resto de a/b nao for zero, então entra no loop
 		{
 			do 
 			{
-				acumulador = resto;
-				resto = b % resto;
-				b = acumulador;
+				acumulador = resto; // acumulando o resto
+				resto = b % resto; // novo resto será o resto da divisao de b/resto
+				b = acumulador; // tranformando o resto no novo dividendo
 				if (resto == 0) 
 				{
 					System.out.println(b);
@@ -53,4 +53,5 @@ public class AlgoritmoEuclides {
 		}
 		}
 		}
+		
 		
