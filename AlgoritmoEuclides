@@ -1,0 +1,56 @@
+
+/**
+ * Algoritmo de Euclides, para mostrar o MDC de 2 números naturais maiores do que zero.
+ * 
+ * @author (Luís Lima); 
+ * @version (10/05)
+ */
+
+ipackage euclides;
+
+
+import java.util.Scanner;
+public class AlgoritmoEuclides {
+	public static void main (String[]args) 
+	{
+		int a = 0;
+		int b = 0;
+		int resto = 0;
+		int divisao = 0;
+		int aux = 0;
+		int acumulador = 0;
+		int quociente = 0;
+		Scanner input = new Scanner(System.in);
+		System.out.println("\f");
+		do {
+		System.out.println("Digite o divisor: ");
+		a = input.nextInt();
+		System.out.println("Digite o dividendo: ");
+		b = input.nextInt();
+		}while (a <= 0 && b <= 0); //garantindo um número natural maior do que zero.
+		
+		if (a < b) // invertendo as variáveis, caso a seja menor que b.
+		{
+			aux = a;
+			a = b;
+			b = aux;
+		}
+		
+		resto = a%b;
+		if (resto == 0) {System.out.println(b);}
+		else 
+		{
+			do 
+			{
+				acumulador = resto;
+				resto = b % resto;
+				b = acumulador;
+				if (resto == 0) 
+				{
+					System.out.println(b);
+				}
+			} while (resto != 0);
+		}
+		}
+		}
+		
