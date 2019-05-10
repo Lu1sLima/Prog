@@ -1,0 +1,47 @@
+
+/**
+ * Escreva a descrição da classe AlgoritmoDeEuclides aqui.
+ * 
+ * @author (seu nome) 
+ * @version (número de versão ou data)
+ */
+
+import java.util.Scanner;
+public class AlgoritmoDeEuclides
+{
+    public static void main (String []args)
+    {
+        Scanner input = new Scanner(System.in);
+        int dividendo = 0;
+        int divisor = 0;
+        int quociente = 0;
+        int resto = 1;
+        int aux = 0;System.out.println("\f");
+     
+   do{
+        System.out.println("Digite o dividendo: ");
+        dividendo = input.nextInt();
+        System.out.println("Digite o divisor: ");
+        divisor = input.nextInt();
+    } while (dividendo <= 0 && divisor <= 0); //garantindo que vão digitar numeros naturais maiores que zero
+    
+   if (dividendo < divisor){aux = divisor;
+        divisor = dividendo;
+        dividendo = divisor;}
+   
+   while (resto != 0){
+       resto = dividendo % divisor;
+       if (resto == 0)
+       {
+           System.out.println("O MDC de " +dividendo+ " e " +divisor+ " é: "+divisor);
+       } else
+       {
+           dividendo = divisor;
+           divisor = resto;
+           System.out.println("O MDC de " +dividendo+ " e " +divisor+ " é: "+resto);
+       }
+     
+        
+    }
+}
+}
