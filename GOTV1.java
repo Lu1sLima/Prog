@@ -1,4 +1,4 @@
-package exercíciosRepetiçãoGiraffa;
+package exercÃ­ciosRepetiÃ§Ã£oGiraffa;
 
 public class GOT
 {
@@ -15,7 +15,7 @@ public class GOT
 		double kgRacaoTotalD = 0;
 		double kgRacaoTodos = 0;
 		double draconaris = 1000000;
-		double dolar = 2*draconaris;
+		double dolares = 2*draconaris;
 		double sacos = 0;
 		double valor = 0;
 		
@@ -24,8 +24,8 @@ public class GOT
 		
 		for (int i = 0; i < 365; i++) // 1 ano.
 		{
-			kgRacaoR = r * 0.005; // calculando 0,5% de peso do dragão (que é oq ele come por dia)
-			kgRacaoTotalR += +kgRacaoR; // acumulando quantos kgs de ração ele comeu no total.
+			kgRacaoR = r * 0.005; // calculando 0,5% de peso do dragÃ£o (que Ã© oq ele come por dia)
+			kgRacaoTotalR += +kgRacaoR; // acumulando quantos kgs de raÃ§Ã£o ele comeu no total.
 			r += +kgRacaoR; // atualizando o novo peso, a cada loop(dia);
 			
 			kgRacaoV = v * 0.005;
@@ -37,26 +37,26 @@ public class GOT
 			d += +kgRacaoD;
 		}
 		
-		kgRacaoTodos = kgRacaoTotalR+kgRacaoTotalV+kgRacaoTotalD; // calculando quantos kgs de ração foi consumido POR TODOS ELES, durante o primeiro ano
-		sacos = kgRacaoTodos/500; // calculando quantos sacos de ração eles comeram
-		valor = sacos*30000; // calculando quanto foi gasto com os sacos de ração
+		kgRacaoTodos = kgRacaoTotalR+kgRacaoTotalV+kgRacaoTotalD; // calculando quantos kgs de raÃ§Ã£o foi consumido POR TODOS ELES, durante o primeiro ano
+		sacos = kgRacaoTodos/500; // calculando quantos sacos de raÃ§Ã£o eles comeram
+		valor = sacos*30000; // calculando quanto foi gasto com os sacos de raÃ§Ã£o
 		
-		System.out.println("Rhaegal comeu: " +Math.round(kgRacaoTotalR)+ "Kgs de ração no seu primeiro ano de vida.");
-		System.out.println("Viserion comeu: " +Math.round(kgRacaoTotalV)+ "Kgs de ração no seu primeiro ano de vida.");
-		System.out.println("Drogon comeu: " +Math.round(kgRacaoTotalD)+ "Kgs de ração no seu primeiro ano de vida.");
+		System.out.println("Rhaegal comeu: " +Math.round(kgRacaoTotalR)+ "Kgs de raÃ§Ã£o no seu primeiro ano de vida.");
+		System.out.println("Viserion comeu: " +Math.round(kgRacaoTotalV)+ "Kgs de raÃ§Ã£o no seu primeiro ano de vida.");
+		System.out.println("Drogon comeu: " +Math.round(kgRacaoTotalD)+ "Kgs de raÃ§Ã£o no seu primeiro ano de vida.");
 		System.out.println("\n");
-		System.out.println("Foi consumido: " +Math.round(kgRacaoTodos)+ "Kgs de ração no primeiro ano.");
-		System.out.println("Foi consumido: " +Math.round(sacos)+ " saco(s) de ração no primeiro ano.");
+		System.out.println("Foi consumido: " +Math.round(kgRacaoTodos)+ "Kgs de raÃ§Ã£o no primeiro ano.");
+		System.out.println("Foi consumido: " +Math.round(sacos)+ " saco(s) de raÃ§Ã£o no primeiro ano.");
 		System.out.println("\n");
 		System.out.println("Rhaegal ficou com: "+Math.round(r)+"Kgs no primeiro ano.");
 		System.out.println("Viserion ficou com: "+Math.round(v)+"Kgs no primeiro ano.");
 		System.out.println("Drogon ficou com: "+Math.round(d)+"Kgs no primeiro ano.");
 		System.out.println("\n");
 		
-		for (int j = 0; j < 365; j++) // segundo ano, lembrando que as variáveis ja estão com o valor do primeiro ano.
+		for (int j = 0; j < 365; j++) // segundo ano, lembrando que as variÃ¡veis ja estÃ£o com o valor do primeiro ano.
 		{
-			kgRacaoR = r * 0.005; // calculando 0,5% de peso do dragão (que é oq ele come por dia)
-			kgRacaoTotalR += +kgRacaoR; // acumulando quantos kgs de ração ele comeu no total.
+			kgRacaoR = r * 0.005; // calculando 0,5% de peso do dragÃ£o (que Ã© oq ele come por dia)
+			kgRacaoTotalR += +kgRacaoR; // acumulando quantos kgs de raÃ§Ã£o ele comeu no total.
 			r += +kgRacaoR; // atualizando o novo peso, a cada loop(dia);
 			
 			kgRacaoV = v * 0.005;
@@ -72,15 +72,15 @@ public class GOT
 		sacos = kgRacaoTodos/500;
 		valor = sacos*30000;
 		
-		System.out.println("Os dragões comeram: "+Math.round(kgRacaoTodos)+"Kgs de ração no segundo ano de vida.");
-		System.out.println("Foi consumido: "+Math.round(sacos)+ " saco(s) de ração no segundo ano de vida.");
-		if (valor <= 2000000)
+		System.out.println("Os dragÃµes comeram: "+Math.round(kgRacaoTodos)+"Kgs de raÃ§Ã£o no segundo ano de vida.");
+		System.out.println("Foi consumido: "+Math.round(sacos)+ " saco(s) de raÃ§Ã£o no segundo ano de vida.");
+		if (valor <= dolares)
 		{
-			System.out.println("A verba foi suficiente para alimentar os dragões nos dois primeiros anos de vida.");
+			System.out.println("A verba foi suficiente para alimentar os dragÃµes nos dois primeiros anos de vida.");
 		}
 		else
 		{
-			System.out.println ("A verba não foi suficiente para alimentar os dragões nos dois primeiros anos de vida.");
+			System.out.println ("A verba nÃ£o foi suficiente para alimentar os dragÃµes nos dois primeiros anos de vida.");
 		}
 	}
 }
