@@ -1,7 +1,7 @@
 package BicharaV1;
 
 /** @author (Luís Lima, 19111170-7)
- * @author (Lucas Machado Garcia 1911127-0)
+ * @author (Lucas Machado Garcia 19111270-5)
  * @professora (Giraffa)
  * @turma (128)
  * @version (09/06/19)
