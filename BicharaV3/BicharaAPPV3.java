@@ -179,7 +179,6 @@ public class BicharaAPPV3 {
 
     public static int opcao() {
         Scanner input = new Scanner(System.in);
-        System.out.println("\f");
         System.out.println("******************************************************************************************************************");
         System.out.println("Menu de compras Loja Bichara:");
         System.out.println("0 - Finalizar compra;");
