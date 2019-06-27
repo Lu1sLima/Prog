@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class BibliotecaUltimato here.
+ * Biblioteca Ultimato.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Luís Lima)
+ * @version (27/06/19)
  */
 public class BibliotecaUltimato
 {
