@@ -1,38 +1,79 @@
 public class Cofrinho{
+    protected Moeda m1;
     protected int posicao = 0;
-    protected Moeda [] cofrinho;
+    protected Moeda [] moedas;
 
     public Cofrinho(){
-        this.cofrinho = new Moeda[10];
+        this.moedas = new Moeda[10];
     }
 
-    public boolean ColocaMoeda(Moeda qual){
-       if (posicao == cofrinho.length){
+
+    public int getTamanhoVetor(){
+        return moedas.length;
+    }
+
+    public boolean colocaMoeda(NomeMoeda qual){
+        this.m1 = new Moeda(qual);
+       if (posicao == moedas.length){
           return false; 
        } else{
-            this.cofrinho[posicao] = qual;
+            this.moedas[posicao] = m1;
             this.posicao++;
             return true;
        }
     }
 
-    public void RetiraMoeda(){
-        Moeda moedaRetirada = this.cofrinho[cofrinho.length-1];
-        this.cofrinho[cofrinho.lengh-1] = null;
-        return moedaRetirada;
+    public Moeda retiraMoeda(){
+        Moeda qual = moedas[moedas.length-1];
+        if (moedas[moedas.length-1] != null){
+            this.moedas[moedas.length-1] = null;
+        }
+        else{
+            qual = moedas[moedas.length-2];
+            this.moedas[moedas.length-2] = null;
+        }
+        return qual;
     }
 
-    public void QuantasMoedas(){
-        for (int i = 0; i<cofrinho.length; i++){
-            int vazio = 0;
-            if(cofrinho[i] == null){
+    public int quantasMoedas(){
+        int vazio = 0;
+        for (int i = 0; i<moedas.length; i++){
+            if(moedas[i] == null){
                 vazio++;
             }
         }
-        int conta = cofrinho.length-vazio;
+        int conta = moedas.length-vazio;
         return conta;
     }
 
+    public double totalCentavos(){
+        double somaCentavos = 0;
+        for (int i = 0; i<moedas.length; i++){
+            //EM ANDAMENTO
+        }
+        return somaCentavos;
+
+    }
+
+
+    public int retornaQualMoeda(NomeMoeda aq){
+        int aPila = 0;
+        for(int i = 0; i < moedas.length;i++){
+            if(moedas[i].getNomeMoeda() == aq){
+                aPila++;
+            }
+        }
+        return aPila;
+
+    }
+
+    public double totalReais(){
+        double somaReais = 0;
+        for(int i = 0; i<moedas.length; i++){
+            somaReais += moedas[i].getValorReais();
+        }
+        return somaReais;
+    } 
 
 
 
